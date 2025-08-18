@@ -33,10 +33,10 @@ export const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="text-headline mb-6">
-            Services That <span className="text-gradient">Drive Growth</span>
+            What I Can Do <span className="text-gradient">For You</span>
           </h2>
           <p className="text-body-large max-w-3xl mx-auto text-muted-foreground">
-            Comprehensive digital solutions designed to elevate your brand and accelerate your business growth.
+            My work goes beyond design—it's about empowering businesses with strong visuals, engaging videos, and creative strategies that drive growth.
           </p>
         </div>
         
