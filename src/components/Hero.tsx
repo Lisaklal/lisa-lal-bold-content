@@ -26,20 +26,22 @@ export const Hero = () => {
           {/* Text Content */}
           <div className="text-white animate-slide-up">
             <h1 className="text-display mb-6">
-              I create{" "}
-              <span className="text-gradient">bold content</span>{" "}
-              that makes businesses{" "}
-              <span className="text-gradient">impossible to ignore</span>
+              Hi, I'm{" "}
+              <span className="text-gradient hover:scale-105 transition-transform duration-300 inline-block cursor-pointer">Lisa Lal</span>.
             </h1>
             
-            <p className="text-body-large mb-8 text-gray-300 max-w-2xl">
-              Content manager & creative strategist helping international businesses 
-              dominate social media, create compelling content, and accelerate growth.
+            <h2 className="text-headline mb-4 text-white">
+              Your business deserves content that{" "}
+              <span className="text-gradient">works as hard as you do</span>.
+            </h2>
+            
+            <p className="text-subtitle mb-8 text-gray-300 max-w-2xl hover:text-white transition-colors duration-300">
+              Turning ideas into visuals and visuals into sales.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button className="btn-hero glow-effect">
-                Let's Work Together
+                Work With Me
               </button>
               <button className="btn-outline text-white border-white hover:bg-white hover:text-black">
                 View My Work

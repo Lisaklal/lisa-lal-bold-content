@@ -12,20 +12,20 @@
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
     
-    /* Brand Colors */
-    --electric: 215 100% 50%;
-    --electric-glow: 215 100% 60%;
-    --electric-dark: 215 100% 40%;
+    /* Brand Colors - Lisa Lal 360° Content Manager */
+    --electric: 195 100% 73%;        /* #74CEFF - Electric Blue */
+    --electric-glow: 195 100% 78%;   /* Lighter electric blue */
+    --electric-dark: 195 100% 68%;   /* Darker electric blue */
     
     /* Semantic Colors */
-    --primary: 0 0% 0%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 195 100% 73%;         /* Electric Blue Primary */
+    --primary-foreground: 0 0% 0%;
     
-    --secondary: 0 0% 98%;
+    --secondary: 0 0% 100%;          /* Pure White */
     --secondary-foreground: 0 0% 0%;
     
-    --accent: 215 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 58 93% 58%;            /* #F9F72D - Neon Yellow */
+    --accent-foreground: 0 0% 0%;
     
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
@@ -38,12 +38,12 @@
     --ring: 215 100% 50%;
     
     /* Gradients */
-    --gradient-electric: linear-gradient(135deg, hsl(215 100% 50%), hsl(260 100% 60%));
-    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 20%));
-    --gradient-glow: radial-gradient(circle at center, hsl(215 100% 50% / 0.3), transparent 70%);
+    --gradient-electric: linear-gradient(135deg, hsl(195 100% 73%), hsl(58 93% 58%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(195 100% 73%));
+    --gradient-glow: radial-gradient(circle at center, hsl(195 100% 73% / 0.3), transparent 70%);
     
     /* Shadows */
-    --shadow-electric: 0 20px 60px hsl(215 100% 50% / 0.3);
+    --shadow-electric: 0 20px 60px hsl(195 100% 73% / 0.3);
     --shadow-bold: 0 25px 50px hsl(0 0% 0% / 0.15);
     --shadow-soft: 0 10px 30px hsl(0 0% 0% / 0.1);
     

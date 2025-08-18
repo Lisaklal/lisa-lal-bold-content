@@ -13,7 +13,7 @@ export const CallToAction = () => {
         <div className="text-center max-w-4xl mx-auto scroll-reveal">
           <h2 className="text-display mb-8">
             Let's grow your business{" "}
-            <span className="text-gradient">together</span>
+            <span className="text-gradient">today</span>
           </h2>
           
           <p className="text-body-large mb-12 text-gray-300 max-w-2xl mx-auto">
@@ -99,7 +99,7 @@ export const CallToAction = () => {
             <div className="flex justify-center gap-6 text-sm text-gray-500">
               <span>© 2024 Lisa Lal</span>
               <span>•</span>
-              <span>Content Manager & Creative Strategist</span>
+              <span>360° Content Manager</span>
             </div>
           </div>
         </div>

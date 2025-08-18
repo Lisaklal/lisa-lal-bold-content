@@ -5,27 +5,28 @@ export const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="scroll-reveal">
             <h2 className="text-headline mb-8 text-center">
-              Bold. Creative. <span className="text-gradient">Results-Driven.</span>
+              <span className="text-gradient">360° Content Manager</span>
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="scroll-reveal">
               <p className="text-body-large mb-6">
-                I'm Lisa Lal, and I believe that bold content isn't just about grabbing attention—it's about 
-                creating connections that convert. With over 5 years of experience in content strategy, 
-                I help businesses transform their digital presence from forgettable to unforgettable.
+                I'm Lisa Lal, your bold, all-in-one content strategist who transforms businesses through 
+                powerful visual storytelling. Combining expertise in graphic design, social media management, 
+                video editing, digital marketing, and salesmanship, I deliver comprehensive content solutions.
               </p>
               
               <p className="text-body mb-6">
-                My approach combines creative storytelling with data-driven strategy. I don't just create 
-                content; I craft experiences that resonate with your audience and drive real business results.
+                From concept to conversion, I handle every aspect of your content strategy—because your 
+                business deserves content that works as hard as you do. Let me turn your ideas into visuals 
+                and your visuals into sales.
               </p>
               
               <div className="flex flex-wrap gap-3">
                 {[
-                  "Creative Strategy", "Content Creation", "Social Media Management", 
-                  "Video Editing", "Shopify/E-commerce", "Brand Development"
+                  "Graphic Design", "Social Media Management", "Video Editing", 
+                  "Shopify/E-commerce", "Digital Marketing", "Salesmanship"
                 ].map((skill, index) => (
                   <span 
                     key={skill}
