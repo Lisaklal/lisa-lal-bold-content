@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +55,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				electric: {
+					DEFAULT: 'hsl(var(--electric))',
+					glow: 'hsl(var(--electric-glow))',
+					dark: 'hsl(var(--electric-dark))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +70,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			boxShadow: {
+				'electric': 'var(--shadow-electric)',
+				'bold': 'var(--shadow-bold)',
+				'soft': 'var(--shadow-soft)',
+			},
+			backgroundImage: {
+				'gradient-electric': 'var(--gradient-electric)',
+				'gradient-dark': 'var(--gradient-dark)',
+				'gradient-glow': 'var(--gradient-glow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

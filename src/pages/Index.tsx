@@ -1,13 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Services } from "@/components/Services";
+import { Portfolio } from "@/components/Portfolio";
+import { Process } from "@/components/Process";
+import { Testimonials } from "@/components/Testimonials";
+import { CallToAction } from "@/components/CallToAction";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
+  useScrollAnimation();
+
+  useEffect(() => {
+    // Update page title and meta description for SEO
+    document.title = "Lisa Lal - Bold Content Manager | Social Media & Creative Strategy";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Professional content manager Lisa Lal creates bold content strategies for international businesses. Expert in social media management, video editing, and e-commerce growth.');
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Process />
+      <Testimonials />
+      <CallToAction />
+    </main>
   );
 };
 
