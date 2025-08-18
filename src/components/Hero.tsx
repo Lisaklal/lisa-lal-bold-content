@@ -25,17 +25,11 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           {/* Text Content */}
           <div className="text-white animate-slide-up">
-            <h1 className="text-display mb-6">
-              Hi, I'm{" "}
-              <span className="text-gradient hover:scale-105 transition-transform duration-300 inline-block cursor-pointer">Lisa Lal</span>.
+            <h1 className="text-display mb-6 text-center lg:text-left">
+              <span className="text-gradient hover:scale-105 transition-transform duration-300 inline-block cursor-pointer">Lisa Lal</span>
             </h1>
             
-            <h2 className="text-headline mb-4 text-white">
-              Your business deserves content that{" "}
-              <span className="text-gradient">works as hard as you do</span>.
-            </h2>
-            
-            <p className="text-subtitle mb-8 text-gray-300 max-w-2xl hover:text-white transition-colors duration-300">
+            <p className="text-subtitle mb-8 text-gray-300 max-w-2xl hover:text-white transition-colors duration-300 text-center lg:text-left">
               Turning ideas into visuals and visuals into sales.
             </p>
             
@@ -64,17 +58,82 @@ export const Hero = () => {
             </div>
           </div>
           
-          {/* Profile Image */}
+          {/* Right Side - Paper Clip & Mockups */}
           <div className="flex justify-center lg:justify-end animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-electric rounded-full blur-3xl opacity-30 scale-110"></div>
-              <img 
-                src={lisaHeadshot}
-                alt="Lisa Lal - Content Manager"
-                className="relative w-80 h-80 object-cover rounded-full border-4 border-white/20 shadow-bold"
-              />
-              <div className="absolute -bottom-4 -right-4 bg-accent text-white px-4 py-2 rounded-full font-bold text-sm">
-                ✨ Available Now
+              {/* Paper Clip with Photo */}
+              <div className="absolute top-0 left-8 z-10">
+                <div className="relative">
+                  {/* Paper Clip SVG */}
+                  <svg width="40" height="80" viewBox="0 0 40 80" className="text-electric">
+                    <path 
+                      d="M20 10 L20 50 Q20 65 35 65 Q50 65 50 50 L50 20"
+                      stroke="currentColor" 
+                      strokeWidth="3" 
+                      fill="none"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                  {/* Clipped Photo */}
+                  <div className="absolute top-6 left-6 w-24 h-32 transform rotate-12">
+                    <img 
+                      src={lisaHeadshot}
+                      alt="Lisa Lal"
+                      className="w-full h-full object-cover border-4 border-white shadow-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              {/* Phone Mockups */}
+              <div className="flex gap-8 items-center">
+                {/* YouTube Growth Phone */}
+                <div className="relative">
+                  <div className="w-48 h-96 bg-black rounded-3xl p-2 shadow-bold">
+                    <div className="w-full h-full bg-white rounded-2xl flex flex-col">
+                      <div className="h-6 bg-gray-100 rounded-t-2xl flex items-center justify-center">
+                        <div className="w-16 h-1 bg-gray-400 rounded-full"></div>
+                      </div>
+                      <div className="flex-1 p-4">
+                        <div className="text-xs font-bold mb-2">YouTube Analytics</div>
+                        <div className="space-y-2">
+                          <div className="h-20 bg-red-500 rounded-lg flex items-center justify-center text-white text-xs">
+                            +2.5M Views
+                          </div>
+                          <div className="text-xs text-gray-600">Subscribers: 45.2K → 78.1K</div>
+                          <div className="text-xs text-electric font-bold">📈 +72% Growth</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 bg-electric text-white px-2 py-1 rounded-full text-xs font-bold">
+                    +72% Growth
+                  </div>
+                </div>
+                
+                {/* Shopify Growth Phone */}
+                <div className="relative">
+                  <div className="w-48 h-96 bg-black rounded-3xl p-2 shadow-bold">
+                    <div className="w-full h-full bg-white rounded-2xl flex flex-col">
+                      <div className="h-6 bg-gray-100 rounded-t-2xl flex items-center justify-center">
+                        <div className="w-16 h-1 bg-gray-400 rounded-full"></div>
+                      </div>
+                      <div className="flex-1 p-4">
+                        <div className="text-xs font-bold mb-2">Shopify Store</div>
+                        <div className="space-y-2">
+                          <div className="h-20 bg-green-500 rounded-lg flex items-center justify-center text-white text-xs">
+                            $125K Revenue
+                          </div>
+                          <div className="text-xs text-gray-600">Orders: 1.2K → 3.8K</div>
+                          <div className="text-xs text-electric font-bold">💰 +216% Sales</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 bg-electric text-white px-2 py-1 rounded-full text-xs font-bold">
+                    +216% Sales
+                  </div>
+                </div>
               </div>
             </div>
           </div>

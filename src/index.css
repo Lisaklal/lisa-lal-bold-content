@@ -24,8 +24,8 @@
     --secondary: 0 0% 100%;          /* Pure White */
     --secondary-foreground: 0 0% 0%;
     
-    --accent: 58 93% 58%;            /* #F9F72D - Neon Yellow */
-    --accent-foreground: 0 0% 0%;
+    --accent: 195 100% 73%;          /* Electric Blue as accent */
+    --accent-foreground: 0 0% 100%;
     
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 40%;
@@ -35,10 +35,10 @@
     
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 215 100% 50%;
+    --ring: 195 100% 73%;
     
     /* Gradients */
-    --gradient-electric: linear-gradient(135deg, hsl(195 100% 73%), hsl(58 93% 58%));
+    --gradient-electric: linear-gradient(135deg, hsl(195 100% 73%), hsl(195 100% 78%));
     --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(195 100% 73%));
     --gradient-glow: radial-gradient(circle at center, hsl(195 100% 73% / 0.3), transparent 70%);
     
@@ -125,12 +125,12 @@
   
   /* Gradient Text */
   .text-gradient {
-    @apply bg-gradient-to-r from-accent to-electric-glow bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-electric to-electric-glow bg-clip-text text-transparent;
   }
   
   /* Button Variants */
   .btn-hero {
-    @apply bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold text-lg tracking-wide uppercase;
+    @apply bg-electric text-white px-8 py-4 rounded-full font-bold text-lg tracking-wide uppercase;
     @apply hover:scale-105 active:scale-95 transition-all duration-300;
     @apply shadow-electric hover:shadow-electric;
     background: var(--gradient-electric);

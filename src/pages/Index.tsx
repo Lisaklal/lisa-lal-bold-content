@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
+import { GraphicDesign } from "@/components/GraphicDesign";
 import { Services } from "@/components/Services";
-import { Portfolio } from "@/components/Portfolio";
 import { Process } from "@/components/Process";
-import { Testimonials } from "@/components/Testimonials";
+import { Portfolio } from "@/components/Portfolio";
 import { CallToAction } from "@/components/CallToAction";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -24,11 +23,10 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Hero />
-      <About />
+      <GraphicDesign />
       <Services />
-      <Portfolio />
       <Process />
-      <Testimonials />
+      <Portfolio />
       <CallToAction />
     </main>
   );
