@@ -4,42 +4,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lisa Lal Portfolio Design System - Clean, Minimalist, Editorial */
+/* Lisa Lal Portfolio Design System - Bold, Modern, Creative */
 
 @layer base {
   :root {
-    /* Core Colors - Editorial Palette */
+    /* Core Colors - Bold & Professional */
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
     
-    /* Brand Colors - Deep Blue Focus */
-    --deep-blue: 220 91% 25%;        /* Deep saturated blue */
-    --light-blue: 220 91% 45%;       /* Lighter blue for gradient */
-    --blue-muted: 220 91% 35%;       /* Mid-tone blue */
+    /* Brand Colors - Lisa Lal 360° Content Manager */
+    --electric: 195 100% 73%;        /* #74CEFF - Electric Blue */
+    --electric-glow: 195 100% 78%;   /* Lighter electric blue */
+    --electric-dark: 195 100% 68%;   /* Darker electric blue */
     
     /* Semantic Colors */
-    --primary: 220 91% 25%;          /* Deep Blue Primary */
-    --primary-foreground: 0 0% 100%;
+    --primary: 195 100% 73%;         /* Electric Blue Primary */
+    --primary-foreground: 0 0% 0%;
     
     --secondary: 0 0% 100%;          /* Pure White */
     --secondary-foreground: 0 0% 0%;
     
-    --accent: 220 91% 25%;           /* Deep Blue as accent */
+    --accent: 195 100% 73%;          /* Electric Blue as accent */
     --accent-foreground: 0 0% 100%;
     
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 0 0% 40%;
     
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
     
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 220 91% 25%;
+    --ring: 195 100% 73%;
     
-    /* Gradients - Subtle Editorial */
-    --gradient-hero: linear-gradient(135deg, hsl(220 91% 25%), hsl(220 91% 35%));
-    --gradient-soft: linear-gradient(180deg, hsl(220 91% 25%), hsl(220 91% 30%));
+    /* Gradients */
+    --gradient-electric: linear-gradient(135deg, hsl(195 100% 73%), hsl(195 100% 78%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(195 100% 73%));
+    --gradient-glow: radial-gradient(circle at center, hsl(195 100% 73% / 0.3), transparent 70%);
     
     /* Shadows */
     --shadow-electric: 0 20px 60px hsl(195 100% 73% / 0.3);
@@ -87,8 +88,7 @@
   }
 
   body {
-    @apply bg-background text-foreground overflow-x-hidden;
-    font-family: 'Neue Haas Grotesk Display Pro', 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+    @apply bg-background text-foreground font-inter overflow-x-hidden;
     scroll-behavior: smooth;
   }
   
@@ -98,21 +98,17 @@
 }
 
 @layer components {
-  /* Typography Scale - Editorial Hierarchy */
+  /* Typography Scale */
   .text-display {
-    @apply text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none;
+    @apply text-6xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none;
   }
   
   .text-headline {
-    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight;
-  }
-  
-  .text-manager-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    @apply text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight;
   }
   
   .text-title {
-    @apply text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight;
+    @apply text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight;
   }
   
   .text-subtitle {
@@ -155,22 +151,16 @@
     animation: float 6s ease-in-out infinite;
   }
   
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+  
   .animate-slide-up {
     animation: slide-up 0.8s ease-out;
   }
   
   .parallax {
     transform-style: preserve-3d;
-  }
-  
-  /* Marquee Animation */
-  .marquee {
-    animation: marquee 120s linear infinite;
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
   }
   
   /* Scroll Animations */
