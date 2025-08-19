@@ -25,7 +25,13 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Hero />
+      <GraphicDesign />
+      <Services />
       <VisualCommunication />
+      <VideoEditing />
+      <Process />
+      <Portfolio />
+      <CallToAction />
     </main>
   );
 };

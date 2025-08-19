@@ -1,17 +1,10 @@
 export const VisualCommunication = () => {
   return (
-    <section className="bg-black py-8 overflow-hidden">
-      <div className="whitespace-nowrap">
-        <div className="inline-block animate-marquee">
-          <span className="text-4xl lg:text-6xl font-black text-white tracking-wider uppercase px-8">
-            TURNING IDEAS INTO VISUALS, AND VISUALS INTO SALES.
-          </span>
-          <span className="text-4xl lg:text-6xl font-black text-white tracking-wider uppercase px-8">
-            TURNING IDEAS INTO VISUALS, AND VISUALS INTO SALES.
-          </span>
-          <span className="text-4xl lg:text-6xl font-black text-white tracking-wider uppercase px-8">
-            TURNING IDEAS INTO VISUALS, AND VISUALS INTO SALES.
-          </span>
+    <section className="py-0 bg-primary overflow-hidden">
+      {/* Marquee */}
+      <div className="whitespace-nowrap py-8">
+        <div className="marquee text-white font-black text-4xl md:text-6xl lg:text-7xl tracking-wider">
+          TURNING IDEAS INTO VISUALS, AND VISUALS INTO SALES.
         </div>
       </div>
     </section>
