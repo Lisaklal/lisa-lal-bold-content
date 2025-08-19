@@ -4,27 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lisa Lal Portfolio Design System - Clean, Minimal, Editorial */
+/* Lisa Lal Portfolio Design System - Bold, Modern, Creative */
 
 @layer base {
   :root {
-    /* Core Colors - Clean & Professional */
+    /* Core Colors - Bold & Professional */
     --background: 0 0% 100%;
     --foreground: 0 0% 0%;
     
-    /* Brand Colors - Deep Saturated Blue */
-    --electric: 220 100% 45%;        /* Deep Blue Primary */
-    --electric-glow: 220 100% 50%;   /* Lighter deep blue */
-    --electric-dark: 220 100% 40%;   /* Darker deep blue */
+    /* Brand Colors - Lisa Lal 360° Content Manager */
+    --electric: 195 100% 73%;        /* #74CEFF - Electric Blue */
+    --electric-glow: 195 100% 78%;   /* Lighter electric blue */
+    --electric-dark: 195 100% 68%;   /* Darker electric blue */
     
     /* Semantic Colors */
-    --primary: 220 100% 45%;         /* Deep Blue Primary */
-    --primary-foreground: 0 0% 100%;
+    --primary: 195 100% 73%;         /* Electric Blue Primary */
+    --primary-foreground: 0 0% 0%;
     
     --secondary: 0 0% 100%;          /* Pure White */
     --secondary-foreground: 0 0% 0%;
     
-    --accent: 220 100% 45%;          /* Deep Blue as accent */
+    --accent: 195 100% 73%;          /* Electric Blue as accent */
     --accent-foreground: 0 0% 100%;
     
     --muted: 0 0% 96%;
@@ -35,15 +35,15 @@
     
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 220 100% 45%;
+    --ring: 195 100% 73%;
     
     /* Gradients */
-    --gradient-electric: linear-gradient(135deg, hsl(220 100% 45%), hsl(220 100% 50%));
-    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(220 100% 45%));
-    --gradient-glow: radial-gradient(circle at center, hsl(220 100% 45% / 0.3), transparent 70%);
+    --gradient-electric: linear-gradient(135deg, hsl(195 100% 73%), hsl(195 100% 78%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(195 100% 73%));
+    --gradient-glow: radial-gradient(circle at center, hsl(195 100% 73% / 0.3), transparent 70%);
     
     /* Shadows */
-    --shadow-electric: 0 20px 60px hsl(220 100% 45% / 0.3);
+    --shadow-electric: 0 20px 60px hsl(195 100% 73% / 0.3);
     --shadow-bold: 0 25px 50px hsl(0 0% 0% / 0.15);
     --shadow-soft: 0 10px 30px hsl(0 0% 0% / 0.1);
     
@@ -159,10 +159,6 @@
     animation: slide-up 0.8s ease-out;
   }
   
-  .animate-marquee {
-    animation: marquee 20s linear infinite;
-  }
-  
   .parallax {
     transform-style: preserve-3d;
   }
@@ -222,9 +218,4 @@
     opacity: 1; 
     transform: translateY(0); 
   }
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
 }
