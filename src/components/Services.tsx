@@ -44,7 +44,7 @@ export const Services = () => {
           {services.map((service, index) => (
             <div 
               key={service.title}
-              className="group scroll-reveal bg-card p-8 rounded-2xl border border-border hover:border-accent transition-all duration-500 hover:scale-105 hover:shadow-blue cursor-pointer"
+              className="group scroll-reveal bg-card p-8 rounded-2xl border border-border hover:border-accent transition-all duration-500 hover:scale-105 hover:shadow-xl cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-6">

@@ -134,8 +134,9 @@
   .btn-hero {
     @apply bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg tracking-wide;
     @apply hover:scale-105 active:scale-95 transition-all duration-300;
-    @apply shadow-blue hover:shadow-blue;
+    @apply shadow-lg hover:shadow-xl;
     background: var(--gradient-blue);
+    box-shadow: 0 20px 60px hsl(220 95% 25% / 0.3);
   }
   
   .btn-outline {
