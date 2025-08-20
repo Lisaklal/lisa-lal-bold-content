@@ -244,11 +244,7 @@
     position: relative;
   }
 
-body {
-  background-image: url('src/assets/ChatGPT Image Aug 20, 2025, 02_19_21 AM.png');
-  background-size: cover;
-  background-position: center;
-}
+
 
 
   .paperclip::before {
