@@ -1,6 +1,6 @@
 export const CallToAction = () => {
   return (
-    <section className="py-20 bg-primary text-white relative overflow-hidden">
+    <section className="py-20 text-white relative overflow-hidden" style={{ background: 'hsl(var(--deep-blue-dark))' }}>
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -15,54 +15,48 @@ export const CallToAction = () => {
           
           <div className="grid md:grid-cols-3 gap-8 justify-center items-center mb-16 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-white/80 text-lg mb-4 font-semibold">Quick Response</div>
               <a 
                 href="https://wa.me/919307569975"
-                className="btn-hero glow-effect inline-block group relative bg-white text-primary hover:bg-white/90"
+                className="glow-effect inline-block group relative px-8 py-4 rounded-xl font-bold text-lg tracking-wide text-white transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
+                style={{ background: 'linear-gradient(135deg, hsl(var(--deep-blue-light)), hsl(var(--primary)))' }}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="WhatsApp"
               >
-                Message Now
-                <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  WhatsApp
-                </span>
+                <span className="group-hover:hidden">Message Now</span>
+                <span className="hidden group-hover:inline" style={{ color: '#4DD45A' }}>WhatsApp</span>
               </a>
             </div>
             
             <div className="text-center">
-              <div className="text-white/80 text-lg mb-4 font-semibold">Detailed Inquiry</div>
               <a 
                 href="mailto:lisaahereee@gmail.com"
-                className="btn-hero glow-effect inline-block group relative bg-white text-primary hover:bg-white/90"
+                className="glow-effect inline-block group relative px-8 py-4 rounded-xl font-bold text-lg tracking-wide text-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
+                style={{ background: 'linear-gradient(135deg, hsl(var(--deep-blue-light)), hsl(var(--primary)))' }}
                 title="Email"
               >
-                Send Email
-                <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Email
-                </span>
+                <span className="group-hover:hidden">Send Email</span>
+                <span className="hidden group-hover:inline">lisaahereee@gmail.com</span>
               </a>
             </div>
             
             <div className="text-center">
-              <div className="text-white/80 text-lg mb-4 font-semibold">Book a Call</div>
               <a 
                 href="tel:+919307569975"
-                className="btn-hero glow-effect inline-block group relative bg-white text-primary hover:bg-white/90"
+                className="glow-effect inline-block group relative px-8 py-4 rounded-xl font-bold text-lg tracking-wide text-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
+                style={{ background: 'linear-gradient(135deg, hsl(var(--deep-blue-light)), hsl(var(--primary)))' }}
                 title="Phone Call"
               >
-                Schedule Call
-                <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  9307569975
-                </span>
+                <span className="group-hover:hidden">Schedule Call</span>
+                <span className="hidden group-hover:inline">9307569975</span>
               </a>
             </div>
           </div>
         </div>
         
         {/* Footer */}
-        <div className="text-center mt-16 pt-8 border-t border-white/20 text-white/80">
-          <p className="text-lg mb-2">Available for projects worldwide. Response time: 2 hours.</p>
+        <div className="text-center mt-16 pt-8 border-t-0 bg-black text-white py-8 -mx-6">
+          <p className="text-lg mb-2">Available for projects worldwide.</p>
           <p className="text-white/60">Lisa Lal • lisaahereee@gmail.com</p>
         </div>
       </div>

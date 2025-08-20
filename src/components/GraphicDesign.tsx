@@ -15,7 +15,7 @@ export const GraphicDesign = () => {
       <div className="container mx-auto px-6">
         <div className="scroll-reveal">
           <h2 className="text-headline mb-8 text-center">
-            Graphic <span className="text-gradient">Design</span>
+            <span className="text-primary">Graphic</span> <span className="text-foreground">Design</span>
           </h2>
           <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-4">
             From dull to generating higher CTR: see the transformations.
