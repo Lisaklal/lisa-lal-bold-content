@@ -33,10 +33,10 @@ export const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="text-headline mb-6">
-            What I Can Do <span className="text-gradient">For You</span>
+            <span className="text-gradient">Services</span>
           </h2>
           <p className="text-body-large max-w-3xl mx-auto text-muted-foreground">
-            My work goes beyond design—it's about empowering businesses with strong visuals, engaging videos, and creative strategies that drive growth.
+            I help creators, influencers, and small businesses transform their brand identity with impactful visuals and smart digital management.
           </p>
         </div>
         
@@ -44,13 +44,13 @@ export const Services = () => {
           {services.map((service, index) => (
             <div 
               key={service.title}
-              className="group scroll-reveal bg-card p-8 rounded-2xl border border-border hover:border-accent transition-all duration-500 hover:scale-105 hover:shadow-electric cursor-pointer"
+              className="group scroll-reveal bg-card p-8 rounded-2xl border border-border hover:border-accent transition-all duration-500 hover:scale-105 hover:shadow-blue cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-electric rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
-                </div>
+              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <service.icon className="w-8 h-8 text-white" />
+              </div>
                 <h3 className="text-title mb-3 group-hover:text-accent transition-colors duration-300">
                   {service.title}
                 </h3>
@@ -72,7 +72,7 @@ export const Services = () => {
               
               <div className="mt-6 pt-6 border-t border-border">
                 <span className="text-accent font-semibold group-hover:underline">
-                  Learn More →
+                  This could be your brand →
                 </span>
               </div>
             </div>

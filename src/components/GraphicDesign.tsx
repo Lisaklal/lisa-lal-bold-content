@@ -14,14 +14,14 @@ export const GraphicDesign = () => {
     <section className="py-20 bg-secondary relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="scroll-reveal">
-          <h2 className="text-headline mb-16 text-center">
+          <h2 className="text-headline mb-8 text-center">
             Graphic <span className="text-gradient">Design</span>
           </h2>
-        </div>
-        
-        <div className="text-center mb-12 scroll-reveal">
-          <p className="text-body-large max-w-3xl mx-auto text-muted-foreground">
-            My passion for design shines through every project. Each piece tells a story, captures attention, and creates meaningful connections with audiences.
+          <p className="text-body-large text-muted-foreground max-w-3xl mx-auto mb-4">
+            From dull to generating higher CTR: see the transformations.
+          </p>
+          <p className="text-body text-muted-foreground max-w-2xl mx-auto mb-12">
+            Every thumbnail and graphic is designed to stop the scroll and drive clicks.
           </p>
         </div>
         

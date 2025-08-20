@@ -1,76 +1,69 @@
-import { MessageCircle, Mail, Phone } from "lucide-react";
-
 export const CallToAction = () => {
   return (
-    <section className="py-20 bg-gradient-dark text-white relative overflow-hidden">
+    <section className="py-20 bg-primary text-white relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-electric/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-black/20 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-4xl mx-auto scroll-reveal">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-8">
-            <div>Let's grow your</div>
-            <div><span className="text-gradient">business today</span></div>
+        <div className="text-center max-w-5xl mx-auto scroll-reveal">
+          <h2 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none mb-12 text-white">
+            Let's turn your Ideas into reality.
           </h2>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-4xl mx-auto mb-16">
-            <div className="text-center flex-1">
-              <h3 className="text-title mb-4 text-white">Quick Response</h3>
+          <div className="grid md:grid-cols-3 gap-8 justify-center items-center mb-16 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-white/80 text-lg mb-4 font-semibold">Quick Response</div>
               <a 
-                href="https://wa.me/1234567890"
-                className="btn-hero flex items-center gap-3 justify-center group w-full max-w-xs mx-auto"
+                href="https://wa.me/919307569975"
+                className="btn-hero glow-effect inline-block group relative bg-white text-primary hover:bg-white/90"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="WhatsApp"
               >
-                <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 Message Now
+                <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  WhatsApp
+                </span>
               </a>
             </div>
             
-            <div className="text-center flex-1">
-              <h3 className="text-title mb-4 text-white">Detail Inquiry</h3>
+            <div className="text-center">
+              <div className="text-white/80 text-lg mb-4 font-semibold">Detailed Inquiry</div>
               <a 
-                href="mailto:lisa@lisalal.com"
-                className="btn-hero flex items-center gap-3 justify-center group w-full max-w-xs mx-auto"
+                href="mailto:lisaahereee@gmail.com"
+                className="btn-hero glow-effect inline-block group relative bg-white text-primary hover:bg-white/90"
+                title="Email"
               >
-                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 Send Email
+                <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Email
+                </span>
               </a>
             </div>
-          </div>
-          
-          {/* Contact Options */}
-          <div className="flex justify-center max-w-2xl mx-auto">
-            <div className="text-center group scroll-reveal">
-              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20 transition-colors duration-300">
-                <Phone className="w-8 h-8 text-electric" />
-              </div>
-              <h3 className="text-title mb-2 text-white">Strategy Call</h3>
-              <p className="text-gray-300 mb-4">
-                Schedule a consultation call to discuss your project in detail.
-              </p>
+            
+            <div className="text-center">
+              <div className="text-white/80 text-lg mb-4 font-semibold">Book a Call</div>
               <a 
-                href="tel:+1234567890"
-                className="text-electric hover:text-electric-glow font-semibold"
+                href="tel:+919307569975"
+                className="btn-hero glow-effect inline-block group relative bg-white text-primary hover:bg-white/90"
+                title="Phone Call"
               >
-                Book Call →
+                Schedule Call
+                <span className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-white text-black px-3 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  9307569975
+                </span>
               </a>
             </div>
           </div>
-          
-          {/* Footer Info */}
-          <div className="mt-16 pt-8 border-t border-white/20 text-center">
-            <p className="text-gray-400 mb-4">
-              Available for projects worldwide • Response time: 24 hours
-            </p>
-            <div className="flex justify-center gap-6 text-sm text-gray-500">
-              <span>© 2024 Lisa Lal</span>
-              <span>•</span>
-              <span>360° Content Manager</span>
-            </div>
-          </div>
+        </div>
+        
+        {/* Footer */}
+        <div className="text-center mt-16 pt-8 border-t border-white/20 text-white/80">
+          <p className="text-lg mb-2">Available for projects worldwide. Response time: 2 hours.</p>
+          <p className="text-white/60">Lisa Lal • lisaahereee@gmail.com</p>
         </div>
       </div>
     </section>
