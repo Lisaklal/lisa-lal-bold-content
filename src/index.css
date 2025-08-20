@@ -130,11 +130,17 @@
   
   /* Button Variants */
   .btn-hero {
-    @apply bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg tracking-wide;
-    @apply hover:scale-105 active:scale-95 transition-all duration-300;
+    @apply px-8 py-4 rounded-xl font-bold text-lg tracking-wide;
+    @apply hover:scale-105 active:scale-95 transition-all duration-250;
     @apply shadow-lg hover:shadow-xl;
-    background: var(--gradient-blue);
-    box-shadow: 0 20px 60px hsl(220 95% 25% / 0.3);
+    background: linear-gradient(135deg, hsl(var(--deep-blue-light)), hsl(var(--deep-blue)));
+    color: white;
+  }
+  
+  .btn-hero:hover {
+    background: white;
+    color: black;
+    border: 1px solid hsl(var(--deep-blue));
   }
   
   .btn-outline {
@@ -207,11 +213,21 @@
     animation: marquee 27s linear infinite;
   }
 
+  .marquee-fast {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee-fast 25s linear infinite;
+  }
   @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
   }
 
+  @keyframes marquee-fast {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
   /* Starry Background */
   .starry-bg {
     background: var(--gradient-starry);

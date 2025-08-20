@@ -30,6 +30,9 @@ export const FAQ = () => {
     }
   ];
 
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
@@ -50,7 +53,7 @@ export const FAQ = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                onClick={() => handleToggle(index)}
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors duration-200"
               >
                 <span className="font-semibold text-foreground text-lg">
@@ -66,8 +69,10 @@ export const FAQ = () => {
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-6 text-muted-foreground">
-                  {faq.answer}
+                <div className="px-6 pb-6">
+                  <div className="bg-primary text-white p-4 rounded-2xl rounded-tl-sm max-w-md ml-auto">
+                    <p className="text-sm leading-relaxed">{faq.answer}</p>
+                  </div>
                 </div>
               )}
             </div>
@@ -80,7 +85,7 @@ export const FAQ = () => {
           </p>
           <a 
             href="mailto:lisaahereee@gmail.com"
-            className="btn-hero inline-block"
+            className="bg-gradient-to-r from-[hsl(var(--deep-blue-light))] to-[hsl(var(--deep-blue))] text-white px-8 py-4 rounded-xl font-bold text-lg tracking-wide hover:bg-white hover:text-black transition-all duration-250 shadow-lg hover:shadow-xl inline-block"
           >
             Book a free consultation
           </a>
