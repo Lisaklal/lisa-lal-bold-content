@@ -14,18 +14,18 @@
     --foreground: 0 0% 0%;
     
     /* Brand Colors - Lisa Lal 360° Manager */
-    --deep-blue: 220 95% 25%;        /* Deep saturated blue */
-    --deep-blue-light: 220 95% 35%;  /* Lighter deep blue */
-    --deep-blue-dark: 220 95% 15%;   /* Darker deep blue */
-    
+    --deep-blue: 211 100% 54%;       /* Main Blue (#007AFF) */
+    --deep-blue-light: 211 100% 70%; /* Lighter Apple-style Blue */
+    --deep-blue-dark: 211 100% 38%;  /* Darker Blue */
+
     /* Semantic Colors */
-    --primary: 220 95% 25%;          /* Deep Blue Primary */
+    --primary: 211 100% 54%;         /* Main Blue */
     --primary-foreground: 0 0% 100%;
     
     --secondary: 0 0% 100%;          /* Pure White */
     --secondary-foreground: 0 0% 0%;
     
-    --accent: 220 95% 25%;           /* Deep Blue as accent */
+    --accent: 211 100% 54%;          /* Blue Accent */
     --accent-foreground: 0 0% 100%;
     
     --muted: 0 0% 96%;
@@ -36,15 +36,15 @@
     
     --border: 0 0% 90%;
     --input: 0 0% 96%;
-    --ring: 220 95% 25%;
+    --ring: 211 100% 54%;
     
-    /* Gradients */
-    --gradient-blue: linear-gradient(135deg, hsl(220 95% 25%), hsl(220 95% 35%));
-    --gradient-starry: linear-gradient(135deg, hsl(220 95% 15%), hsl(0 0% 5%));
-    --gradient-glow: radial-gradient(circle at center, hsl(220 95% 25% / 0.3), transparent 70%);
+    /* Gradients (Apple style, bright + modern) */
+    --gradient-blue: linear-gradient(135deg, hsl(211 100% 70%), hsl(211 100% 54%));
+    --gradient-starry: linear-gradient(135deg, hsl(211 100% 38%), hsl(0 0% 5%));
+    --gradient-glow: radial-gradient(circle at center, hsl(211 100% 54% / 0.3), transparent 70%);
     
     /* Shadows */
-    --shadow-blue: 0 20px 60px hsl(220 95% 25% / 0.3);
+    --shadow-blue: 0 20px 60px hsl(211 100% 54% / 0.3);
     --shadow-bold: 0 25px 50px hsl(0 0% 0% / 0.15);
     --shadow-soft: 0 10px 30px hsl(0 0% 0% / 0.1);
     
@@ -54,34 +54,32 @@
     
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Colors */
+    --sidebar-background: 211 100% 38%; /* Darkest Blue for sidebar */
+    --sidebar-foreground: 0 0% 100%;    /* White text */
+    --sidebar-primary: 211 100% 54%;    /* Main Blue */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 211 100% 70%;     /* Light Blue Hover */
+    --sidebar-accent-foreground: 211 100% 20%;
+    --sidebar-border: 211 50% 80%;
+    --sidebar-ring: 211 100% 54%;
   }
 
   .dark {
     --background: 0 0% 5%;
     --foreground: 0 0% 98%;
-    --electric: 215 100% 60%;
-    --electric-glow: 215 100% 70%;
-    --electric-dark: 215 100% 50%;
-    --gradient-electric: linear-gradient(135deg, hsl(215 100% 60%), hsl(260 100% 70%));
+    
+    --electric: 211 100% 54%;
+    --electric-glow: 211 100% 70%;
+    --electric-dark: 211 100% 38%;
+    
+    --gradient-electric: linear-gradient(135deg, hsl(211 100% 54%), hsl(211 100% 70%));
     --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 15%));
-    --shadow-electric: 0 20px 60px hsl(215 100% 60% / 0.4);
+    
+    --shadow-electric: 0 20px 60px hsl(211 100% 54% / 0.4);
   }
 }
+
 
 @layer base {
   * {
