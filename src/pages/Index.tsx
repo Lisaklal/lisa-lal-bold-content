@@ -1,5 +1,8 @@
 import { useEffect } from "react";
+import { Navigation } from "@/components/Navigation";
+import { ConsultationPopup } from "@/components/ConsultationPopup";
 import { Hero } from "@/components/Hero";
+import { Metrics } from "@/components/Metrics";
 import { Marquee } from "@/components/Marquee";
 import { GraphicDesign } from "@/components/GraphicDesign";
 import { Services } from "@/components/Services";
@@ -26,7 +29,9 @@ const Index = () => {
 
   return (
     <main className="min-h-screen">
+      <Navigation />
       <Hero />
+      <Metrics />
       <Marquee />
       <GraphicDesign />
       <Services />
@@ -36,6 +41,7 @@ const Index = () => {
       <Portfolio />
       <FAQ />
       <CallToAction />
+      <ConsultationPopup />
     </main>
   );
 };

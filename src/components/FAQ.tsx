@@ -5,6 +5,14 @@ export const FAQ = () => {
   
   const faqs = [
     {
+      question: "How does it work?",
+      answer: "Simple! We discuss your project, I create the content, you review and request changes (up to 10 revisions), and then I deliver the final files. The whole process is designed to be smooth and collaborative."
+    },
+    {
+      question: "How many reviewing chances will I get?",
+      answer: "As many as 10 revisions."
+    },
+    {
       question: "What kind of designer are you?",
       answer: "One who balances precision with playfulness. I'm obsessed with clean, intuitive interfaces but also love throwing in unexpected, quirky details."
     },
@@ -19,14 +27,6 @@ export const FAQ = () => {
     {
       question: "How do you handle creative blocks?",
       answer: "I step away from the screen. Sometimes the best solutions come during a walk or while cooking. I also keep a mood board that I constantly update."
-    },
-    {
-      question: "Favorite kind of project to work on?",
-      answer: "Anything that tells a story. Whether it's a brand identity or a single poster, I love projects where I can craft a narrative through design."
-    },
-    {
-      question: "What makes you a good collaborator?",
-      answer: "I listen more than I talk, ask the right questions, and believe that the best work comes from understanding people, not just pixels."
     }
   ];
 
@@ -46,28 +46,46 @@ export const FAQ = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="scroll-reveal bg-white border rounded-xl shadow-soft overflow-hidden"
+              className="scroll-reveal overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors duration-200"
-              >
-                <span className="font-semibold text-foreground text-lg">
-                  {faq.question}
-                </span>
-                <div 
-                  className={`w-8 h-8 rounded-full border-2 border-primary flex items-center justify-center transition-transform duration-200 ${
-                    openIndex === index ? 'rotate-45' : ''
-                  }`}
-                >
-                  <span className="text-primary text-xl font-bold">+</span>
+              {/* Question Bubble - White */}
+              <div className="flex justify-start mb-4">
+                <div className="max-w-2xl">
+                  <div className="bg-white rounded-2xl rounded-bl-sm p-4 shadow-sm border border-border">
+                    <button
+                      onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                      className="w-full flex items-center justify-between text-left"
+                      aria-expanded={openIndex === index}
+                    >
+                      <span className="font-semibold text-foreground text-lg pr-4">
+                        {faq.question}
+                      </span>
+                      <div 
+                        className={`w-8 h-8 rounded-full border-2 border-primary flex items-center justify-center flex-shrink-0 transition-transform duration-200 ${
+                          openIndex === index ? 'rotate-45' : ''
+                        }`}
+                      >
+                        <span className="text-primary text-xl font-bold">+</span>
+                      </div>
+                    </button>
+                  </div>
                 </div>
-              </button>
+              </div>
               
+              {/* Answer Bubble - Blue */}
               {openIndex === index && (
-                <div className="px-6 pb-6 text-muted-foreground">
-                  {faq.answer}
+                <div className="flex justify-end mb-4 animate-fade-in">
+                  <div className="max-w-2xl">
+                    <div 
+                      className="rounded-2xl rounded-br-sm p-4 text-white shadow-sm"
+                      style={{ background: 'hsl(203 100% 72%)' }}
+                    >
+                      <p className="text-white leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

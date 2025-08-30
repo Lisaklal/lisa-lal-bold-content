@@ -15,17 +15,17 @@
     
     /* Brand Colors - Lisa Lal 360° Manager */
     --deep-blue: 211 100% 54%;       /* Main Blue (#007AFF) */
-    --deep-blue-light: 211 100% 70%; /* Lighter Apple-style Blue */
+    --deep-blue-light: 203 100% 72%; /* Lighter Blue (#1486FF) */
     --deep-blue-dark: 211 100% 38%;  /* Darker Blue */
 
     /* Semantic Colors */
-    --primary: 211 100% 54%;         /* Main Blue */
+    --primary: 203 100% 72%;         /* Lighter Blue (#1486FF) */
     --primary-foreground: 0 0% 100%;
     
     --secondary: 0 0% 100%;          /* Pure White */
     --secondary-foreground: 0 0% 0%;
     
-    --accent: 211 100% 54%;          /* Blue Accent */
+    --accent: 203 100% 72%;          /* Blue Accent (#1486FF) */
     --accent-foreground: 0 0% 100%;
     
     --muted: 0 0% 96%;
@@ -204,7 +204,7 @@
     display: flex;
     overflow: hidden;
     white-space: nowrap;
-    animation: marquee 27s linear infinite;
+    animation: marquee 24s linear infinite;
   }
 
   @keyframes marquee {
