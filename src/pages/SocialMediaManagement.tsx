@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { ConsultationPopup } from "@/components/ConsultationPopup";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Instagram, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
 
 const platforms = [
@@ -7,6 +8,7 @@ const platforms = [
   { name: "YouTube", icon: Youtube, color: "from-red-500 to-red-600" },
   { name: "Facebook", icon: Facebook, color: "from-blue-500 to-blue-600" },
   { name: "Twitter", icon: Twitter, color: "from-blue-400 to-blue-500" },
+  { name: "Pinterest", icon: Instagram, color: "from-red-400 to-red-500" },
   { name: "LinkedIn", icon: Linkedin, color: "from-blue-600 to-blue-700" }
 ];
 
@@ -35,18 +37,20 @@ const services = [
 
 // Mock social media post data
 const galleryItems = [
-  { id: 1, image: "/api/placeholder/300/300", platform: "Instagram" },
-  { id: 2, image: "/api/placeholder/300/300", platform: "Facebook" },
-  { id: 3, image: "/api/placeholder/300/300", platform: "LinkedIn" },
-  { id: 4, image: "/api/placeholder/300/300", platform: "Instagram" },
-  { id: 5, image: "/api/placeholder/300/300", platform: "Twitter" },
-  { id: 6, image: "/api/placeholder/300/300", platform: "YouTube" },
-  { id: 7, image: "/api/placeholder/300/300", platform: "Instagram" },
-  { id: 8, image: "/api/placeholder/300/300", platform: "Facebook" },
-  { id: 9, image: "/api/placeholder/300/300", platform: "LinkedIn" },
+  { id: 1, image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?w=400&h=400&fit=crop", platform: "Instagram" },
+  { id: 2, image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=400&h=400&fit=crop", platform: "Facebook" },
+  { id: 3, image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?w=400&h=400&fit=crop", platform: "LinkedIn" },
+  { id: 4, image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?w=400&h=400&fit=crop", platform: "Instagram" },
+  { id: 5, image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=400&h=400&fit=crop", platform: "Twitter" },
+  { id: 6, image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?w=400&h=400&fit=crop", platform: "YouTube" },
+  { id: 7, image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?w=400&h=400&fit=crop", platform: "Instagram" },
+  { id: 8, image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=400&h=400&fit=crop", platform: "Facebook" },
+  { id: 9, image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?w=400&h=400&fit=crop", platform: "LinkedIn" },
 ];
 
 const SocialMediaManagement = () => {
+  useScrollAnimation();
+
   return (
     <main className="min-h-screen pt-16">
       <Navigation />
@@ -97,6 +101,12 @@ const SocialMediaManagement = () => {
                     </li>
                   ))}
                 </ul>
+                
+                <div className="mt-6 pt-6 border-t border-border">
+                  <span className="text-accent font-semibold">
+                    Need this? Let's discuss →
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -108,7 +118,7 @@ const SocialMediaManagement = () => {
               {[0, 1, 2].map((rowIndex) => (
                 <div key={rowIndex} className="overflow-hidden">
                   <div 
-                    className="flex gap-6 animate-marquee hover:animation-paused"
+                    className="flex gap-6 carousel-row"
                     style={{ 
                       animationDirection: rowIndex % 2 === 0 ? 'normal' : 'reverse',
                       animationDelay: `${rowIndex * 2}s`
@@ -152,9 +162,9 @@ const SocialMediaManagement = () => {
               </p>
               <a 
                 href="mailto:lisaahereee@gmail.com"
-                className="inline-block bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300"
+                className="btn-cta inline-block"
               >
-                Book a Free Meeting
+                Book a Meeting
               </a>
             </div>
           </div>

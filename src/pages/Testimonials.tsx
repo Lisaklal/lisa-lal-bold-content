@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { ConsultationPopup } from "@/components/ConsultationPopup";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
@@ -9,7 +10,7 @@ const testimonials = [
     role: "YouTuber",
     rating: 5,
     project: "YouTube thumbnail redesign – boosted clicks by 52%",
-    avatar: "/api/placeholder/60/60"
+    avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?w=60&h=60&fit=crop"
   },
   {
     quote: "She built a strong brand identity and digital strategy for us, and sales rose to 47% more.",
@@ -17,7 +18,7 @@ const testimonials = [
     role: "Business Owner",
     rating: 5,
     project: "Complete brand redesign and e-commerce optimization",
-    avatar: "/api/placeholder/60/60"
+    avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=60&h=60&fit=crop"
   },
   {
     quote: "Lisa managed my socials wonderfully with graphics and increased my followers.",
@@ -25,7 +26,7 @@ const testimonials = [
     role: "Influencer",
     rating: 5,
     project: "Social media management and content creation",
-    avatar: "/api/placeholder/60/60"
+    avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?w=60&h=60&fit=crop"
   },
   {
     quote: "Lisa's designs gave my channel a professional edge. People started clicking on my videos way more.",
@@ -33,33 +34,36 @@ const testimonials = [
     role: "Content Creator",
     rating: 5,
     project: "Channel branding and thumbnail optimization",
-    avatar: "/api/placeholder/60/60"
+    avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=60&h=60&fit=crop"
   },
   {
-    quote: "The video editing quality exceeded my expectations. My engagement rates doubled!",
+    quote: "Our Shopify store design looks amazing and converts like never before.",
     author: "Emma Thompson",
-    role: "Course Creator",
-    rating: 5,
-    project: "Educational video editing and optimization",
-    avatar: "/api/placeholder/60/60"
-  },
-  {
-    quote: "Professional Shopify store setup that converted visitors into customers immediately.",
-    author: "David Kim",
-    role: "E-commerce Entrepreneur",
+    role: "Business Brand",
     rating: 5,
     project: "Shopify store design and conversion optimization",
-    avatar: "/api/placeholder/60/60"
+    avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?w=60&h=60&fit=crop"
+  },
+  {
+    quote: "From logo to launch, Lisa guided us the whole way.",
+    author: "David Kim",
+    role: "Startup Founder",
+    rating: 5,
+    project: "Complete brand development from concept to market",
+    avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=60&h=60&fit=crop"
   }
 ];
 
 const stats = [
+  { value: "100+", label: "Projects Delivered" },
   { value: "4.9★", label: "Average Customer Rating" },
   { value: "10+", label: "Global Clients" },
   { value: "4+", label: "Brands Launched" }
 ];
 
 const Testimonials = () => {
+  useScrollAnimation();
+
   return (
     <main className="min-h-screen pt-16">
       <Navigation />
@@ -76,7 +80,7 @@ const Testimonials = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
             {stats.map((stat, index) => (
               <div 
                 key={stat.label}
@@ -145,13 +149,13 @@ const Testimonials = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="mailto:lisaahereee@gmail.com"
-                  className="inline-block bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300"
+                  className="btn-cta inline-block"
                 >
-                  Book a Free Meeting
+                  Book a Meeting
                 </a>
                 <a 
                   href="https://wa.me/919307569975"
-                  className="inline-block border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300"
+                  className="btn-cta-outline inline-block"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -168,4 +172,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default TechnicalSkills;

@@ -9,7 +9,7 @@ import GraphicDesigning from "./pages/GraphicDesigning";
 import ShopifyEcommerce from "./pages/ShopifyEcommerce";
 import VideoEditing from "./pages/VideoEditing";
 import SocialMediaManagement from "./pages/SocialMediaManagement";
-import TechnicalSkills from "./pages/TechnicalSkills";
+import Software from "./pages/Software";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/shopify-ecommerce" element={<ShopifyEcommerce />} />
           <Route path="/video-editing" element={<VideoEditing />} />
           <Route path="/social-media-management" element={<SocialMediaManagement />} />
-          <Route path="/software" element={<TechnicalSkills />} />
+          <Route path="/software" element={<Software />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

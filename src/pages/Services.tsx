@@ -38,7 +38,7 @@ const Services = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 scroll-reveal">
             <h1 className="text-headline mb-6">
-              <span className="text-primary">Services</span> <span className="text-foreground">Includes</span>
+              <span className="text-primary">Services</span>
             </h1>
             <p className="text-body-large max-w-3xl mx-auto text-muted-foreground">
               I help creators, influencers, and small businesses transform their brand identity with impactful visuals and smart digital management.

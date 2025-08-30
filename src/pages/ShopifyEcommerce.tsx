@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { ConsultationPopup } from "@/components/ConsultationPopup";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Store, Package, Globe, TrendingUp, Palette, BarChart } from "lucide-react";
 
 const services = [
@@ -42,6 +43,8 @@ const services = [
 ];
 
 const ShopifyEcommerce = () => {
+  useScrollAnimation();
+
   return (
     <main className="min-h-screen pt-16">
       <Navigation />
@@ -146,9 +149,9 @@ const ShopifyEcommerce = () => {
               </p>
               <a 
                 href="mailto:lisaahereee@gmail.com"
-                className="inline-block bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300"
+                className="btn-cta inline-block"
               >
-                Book a Consultation
+                Book a Meeting
               </a>
             </div>
           </div>

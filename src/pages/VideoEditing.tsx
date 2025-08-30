@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { ConsultationPopup } from "@/components/ConsultationPopup";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Play, TrendingUp, Users, Clock, Eye, Award } from "lucide-react";
 
 const services = [
@@ -42,6 +43,8 @@ const benefits = [
 ];
 
 const VideoEditing = () => {
+  useScrollAnimation();
+
   return (
     <main className="min-h-screen pt-16">
       <Navigation />
@@ -171,6 +174,22 @@ const VideoEditing = () => {
                   Receive a polished video that speaks volumes, complete with thumbnails, titles, and optimization for maximum impact.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-32 text-center scroll-reveal">
+            <div className="bg-primary/5 rounded-3xl p-12">
+              <h2 className="text-3xl font-bold mb-6">Ready to Create Engaging Videos?</h2>
+              <p className="text-body-large text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Let's transform your raw footage into professional videos that captivate and convert.
+              </p>
+              <a 
+                href="mailto:lisaahereee@gmail.com"
+                className="btn-cta inline-block"
+              >
+                Book a Meeting
+              </a>
             </div>
           </div>
         </div>

@@ -1,17 +1,18 @@
 import { Navigation } from "@/components/Navigation";
 import { ConsultationPopup } from "@/components/ConsultationPopup";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 // Mock image data for before/after examples
 const galleryItems = [
-  { id: 1, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Logo Design" },
-  { id: 2, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Brand Identity" },
-  { id: 3, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Social Media Post" },
-  { id: 4, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Album Cover" },
-  { id: 5, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Poster Design" },
-  { id: 6, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Thumbnail" },
-  { id: 7, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Business Card" },
-  { id: 8, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Website Banner" },
-  { id: 9, after: "/api/placeholder/400/400", before: "/api/placeholder/400/400", title: "Flyer Design" },
+  { id: 1, after: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Logo Design" },
+  { id: 2, after: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Brand Identity" },
+  { id: 3, after: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Social Media Post" },
+  { id: 4, after: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Album Cover" },
+  { id: 5, after: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Poster Design" },
+  { id: 6, after: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Thumbnail" },
+  { id: 7, after: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Business Card" },
+  { id: 8, after: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Website Banner" },
+  { id: 9, after: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?w=400&h=400&fit=crop", before: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?w=400&h=400&fit=crop", title: "Flyer Design" },
 ];
 
 const services = [
@@ -24,6 +25,8 @@ const services = [
 ];
 
 const GraphicDesigning = () => {
+  useScrollAnimation();
+
   return (
     <main className="min-h-screen pt-16">
       <Navigation />
@@ -52,12 +55,12 @@ const GraphicDesigning = () => {
             ))}
           </div>
 
-          {/* Gallery - 3 rows carousel */}
-          <div className="space-y-8">
+          {/* Gallery - 3x3 Grid with Carousel Behavior */}
+          <div className="space-y-8 mb-16">
             {[0, 1, 2].map((rowIndex) => (
               <div key={rowIndex} className="overflow-hidden">
                 <div 
-                  className="flex gap-6 animate-marquee hover:animation-paused"
+                  className="flex gap-6 carousel-row"
                   style={{ 
                     animationDirection: rowIndex % 2 === 0 ? 'normal' : 'reverse',
                     animationDelay: `${rowIndex * 2}s`
@@ -118,7 +121,7 @@ const GraphicDesigning = () => {
                     <span className="text-primary font-bold">Lisara Brand Identity</span>
                   </div>
                   <div className="text-accent font-semibold">
-                    This could be your brand →
+                    Need this? Let's discuss →
                   </div>
                 </div>
               </div>
@@ -133,10 +136,26 @@ const GraphicDesigning = () => {
                     <span className="text-primary font-bold">Ecomare UI/UX</span>
                   </div>
                   <div className="text-accent font-semibold">
-                    Book a Consultation →
+                    Need this? Let's discuss →
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-32 text-center scroll-reveal">
+            <div className="bg-primary/5 rounded-3xl p-12">
+              <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Brand?</h2>
+              <p className="text-body-large text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Let's create visuals that don't just look amazing—they drive results and grow your business.
+              </p>
+              <a 
+                href="mailto:lisaahereee@gmail.com"
+                className="btn-cta inline-block"
+              >
+                Book a Meeting
+              </a>
             </div>
           </div>
         </div>
