@@ -172,4 +172,4 @@ const Testimonials = () => {
   );
 };
 
-export default TechnicalSkills;
+export default Testimonials;
