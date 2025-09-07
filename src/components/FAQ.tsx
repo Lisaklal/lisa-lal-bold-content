@@ -5,28 +5,28 @@ export const FAQ = () => {
   
   const faqs = [
     {
-      question: "How does it work?",
-      answer: "Simple! We discuss your project, I create the content, you review and request changes (up to 10 revisions), and then I deliver the final files. The whole process is designed to be smooth and collaborative."
+      question: "What services do you provide?",
+      answer: "I offer graphic design, Shopify & e-commerce store building, video editing, social media management, and marketing strategy."
+    },
+    {
+      question: "Can I see your past work?",
+      answer: "Yes! My portfolio showcases thumbnails, logos, Instagram posts, videos, managed social media accounts and live Shopify stores I've built."
+    },
+    {
+      question: "How do I get started?",
+      answer: "Just reach out via WhatsApp for a quick response, email me for a detailed inquiry, or book a free consultation to discuss your plans through the contact page."
+    },
+    {
+      question: "What tools and software do you use?",
+      answer: "I'm skilled in Adobe Photoshop, Canva, Shopify, Premiere Pro, CapCut, After Effects, and other industry-standard tools."
+    },
+    {
+      question: "What makes your service different?",
+      answer: "I don't just design pretty things—I create visuals that perform. My focus is on both creativity and conversions."
     },
     {
       question: "How many reviewing chances will I get?",
       answer: "As many as 10 revisions."
-    },
-    {
-      question: "What kind of designer are you?",
-      answer: "One who balances precision with playfulness. I'm obsessed with clean, intuitive interfaces but also love throwing in unexpected, quirky details."
-    },
-    {
-      question: "What inspires your design style?",
-      answer: "Everything from minimalist architecture to street art. I find beauty in contrast—the way simplicity can be bold and complexity can be elegant."
-    },
-    {
-      question: "What's your design process like?",
-      answer: "I start with deep research and understanding, then sketch extensively before moving digital. I believe in iteration and always ask 'why' before 'how.'"
-    },
-    {
-      question: "How do you handle creative blocks?",
-      answer: "I step away from the screen. Sometimes the best solutions come during a walk or while cooking. I also keep a mood board that I constantly update."
     }
   ];
 
@@ -79,7 +79,7 @@ export const FAQ = () => {
                   <div className="max-w-2xl">
                     <div 
                       className="rounded-2xl rounded-br-sm p-4 text-white shadow-sm"
-                      style={{ background: 'hsl(203 100% 72%)' }}
+                      style={{ background: 'hsl(211 100% 55%)' }}
                     >
                       <p className="text-white leading-relaxed">
                         {faq.answer}

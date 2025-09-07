@@ -14,8 +14,11 @@ export const Hero = () => {
                 Lisa Lal
               </h1>
               <h2 className="text-4xl lg:text-5xl font-bold text-primary tracking-tight">
-                360° Manager
+                Creative Designer
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+                I'm a digital creative who loves turning ideas into reality—graphics, videos, social media posts, and high-conversion Shopify stores. My ultimate goal is work that looks amazing AND performs. By handling the details, I save you time. If you want creativity, strategy, and results all in one, I'm here to make it happen.
+              </p>
             </div>
             
             {/* Portrait with Paperclip */}

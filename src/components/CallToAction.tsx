@@ -1,6 +1,6 @@
 export const CallToAction = () => {
   return (
-    <section className="py-20 text-white relative overflow-hidden" style={{ background: '#1486FF' }}>
+    <section className="py-20 text-white relative overflow-hidden" style={{ background: 'linear-gradient(135deg, hsl(211 100% 64%), hsl(211 100% 55%))' }}>
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -52,9 +52,8 @@ export const CallToAction = () => {
         </div>
         
         {/* Footer */}
-        <div className="text-center mt-16 pt-8 border-t-0 bg-black text-white py-8 -mx-6">
-          <p className="text-lg mb-2">Available for projects worldwide.</p>
-          <p className="text-white/60">Lisa Lal • lisaahereee@gmail.com</p>
+        <div className="text-center mt-16 pt-8 border-t-0 py-8 -mx-6" style={{ background: 'linear-gradient(135deg, hsl(211 100% 64%), hsl(211 100% 55%))' }}>
+          <p className="text-lg mb-2 text-white">Available for projects worldwide.</p>
         </div>
       </div>
     </section>

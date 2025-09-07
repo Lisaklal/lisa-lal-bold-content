@@ -6,10 +6,8 @@ import { Metrics } from "@/components/Metrics";
 import { Marquee } from "@/components/Marquee";
 import { GraphicDesign } from "@/components/GraphicDesign";
 import { Services } from "@/components/Services";
-import { VisualCommunication } from "@/components/VisualCommunication";
 import { VideoEditing } from "@/components/VideoEditing";
-import { Process } from "@/components/Process";
-import { Portfolio } from "@/components/Portfolio";
+import { TechnicalSkills } from "@/components/TechnicalSkills";
 import { FAQ } from "@/components/FAQ";
 import { CallToAction } from "@/components/CallToAction";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -33,12 +31,10 @@ const Index = () => {
       <Hero />
       <Metrics />
       <Marquee />
-      <GraphicDesign />
       <Services />
-      <VisualCommunication />
+      <GraphicDesign />
       <VideoEditing />
-      <Process />
-      <Portfolio />
+      <TechnicalSkills />
       <FAQ />
       <CallToAction />
       <ConsultationPopup />
