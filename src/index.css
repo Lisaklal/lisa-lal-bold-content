@@ -138,7 +138,7 @@
   }
   
   .btn-cta {
-    @apply px-8 py-4 rounded-xl font-bold text-lg tracking-wide transition-all duration-300 group;
+    @apply px-8 py-4 rounded-xl font-bold text-lg tracking-wide transition-all duration-300;
     @apply hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl;
     background: linear-gradient(135deg, hsl(var(--deep-blue-light)), hsl(var(--primary)));
     color: white;
